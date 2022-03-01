@@ -1,0 +1,171 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+::selection{
+    color:yellow;
+    background: lightblue;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(kolkata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white; display: flex;justify-content: space-between;
+    align-items: center;text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    color: #00b894;
+    text-shadow: 1px 1px 2px white;
+}
+#newFont{
+    font-family: 'Pacifico', cursive;
+}
+nav .menu{
+    width: 40%;
+    display: flex; justify-content: space-around;
+}
+nav .menu a:visited{
+    color: white;
+}
+nav .menu #a1:hover{
+    color: violet;
+    transition: 1s;
+}
+nav .menu #a2:hover{
+    color: rgb(179, 255, 0);
+    transition: 1s;
+}
+nav .menu #a3:hover{
+    color: yellow;
+    transition: 1s;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main{
+    width: 100%;
+    height: 80vh; /*outer box*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+}
+.section h3{
+    font-size: 35px;font-weight: bold;letter-spacing: 2px;
+    text-shadow: 2px 1px 2px black;
+}
+#newFont:hover{
+    cursor:none;
+}
+.section h1{
+    margin: 30px 0 20px 0;
+    font-size: 60px;
+    font-weight: 800;
+    text-shadow: 1px 2px 2px black;
+    text-transform: uppercase;
+}
+.section p{
+    font-size: 30px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px black;
+}
+.section a{
+    padding: 12px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+.section .btn1{
+    /* background: #00b894; hover effect */
+    background: #fff;
+    color: #000;
+}
+.btn1:hover{
+    background: #00b894;
+    color: #fff;
+}
+.section .btn2{
+    background: #00b894;
+    color: #fff;
+}
+.btn2:hover{
+    background: #fff;
+    color: #000;
+}
+nav .menu a:first-child{
+    color: #00b894;
+}
+.changeBytime:after{
+    content: '';
+    animation: change 8s infinite linear;
+    color: #00b894;
+    /* font-size: 4rem; */
+}
+@keyframes change {
+    0%{content: "Howrah";}
+    20%{content: "Bardhaman";}
+    35%{content: "Mednipur";}
+    60%{content: "Kolorah";}
+    80%{content: "Dhulagar";}
+    100%{content: "Lilua";}
+}
+.div1{
+    border:1px solid red;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 35%;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+}
+.div2{
+    padding: 40px;
+}
+.div2 div{
+    padding: 20px;
+    font-size: 20px;
+}
+.div2 input{
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.div2 input:hover{
+    background-color: cyan;
+    transition: 0.4s;
+}
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.btn0{
+    margin-left: 23%;
+    width: 70px;
+    height: auto;
+    font-size: 18px;
+    background-color: #00b894;
+    color: white;
+}
+.div1 h2{
+    margin-top: 15px;
+    margin-left: 140px;
+    color: white;
+}
